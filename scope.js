@@ -54,11 +54,19 @@ They all have Function Scope:
     /*function myFunction() {
      code here can also use carName
     } */
+    //Example of GLOBAL scope: var x = 2; let x = 2; const x = 2;
+
     //A GLOBAL variable can be accessed from any script or function.
     let carName = "Volvo";
-    // myFunction();
+    myFunction();
 
     function myFunction() {
         document.getElementById("global-scope").innerHTML =  " I can display " + carName;
     }
     myFunction();
+
+    
+    // function myFunction() {
+    //     carName = "Volvo"
+    // }
+    // myFunction();????
